@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fundamentals assignment1</title>
+</head>
+<body>
+<script>
+    var x = [3,5,'Dojo', 'rocks', 'Michael', 'Sensei']
+    x.push(100)
+    var y = ['soumya', 'new']
+    x.push(y)
+    for (i in x) {
+        console.log(x[i])
+    }
+    var sum = 0;
+    for(var j=0; j<500; j++){
+       sum += j
+    }
+    console.log("the sum is:", sum)
+
+    var find_min = [1, 5, 90, 25, -3, 0]
+    var min = 100
+    var count = 0
+    for (eek in find_min){
+        if (min > find_min[eek]){
+            console.log("inside: ", find_min[eek])
+            min = find_min[eek]
+        }
+        count += find_min[eek]
+    }
+    console.log("the minimum value in find_min: ", min)
+    console.log("the average value is: ", count/6)
+</script>
+</body>
+</html>
